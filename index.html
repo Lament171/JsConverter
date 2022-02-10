@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            
+            <div class="top">
+                <div class="nav">
+                    <p class="date">Date</p>
+                    <ion-icon name="person"></ion-icon>
+                </div>
+
+                    <p id="result">United State</p>
+                <ion-icon name="sunny"></ion-icon>
+                <select name="" id="unit-converter" onchange="getSelectValue();">
+                    <option>Temperature</option>
+                    <option>Currency</option>
+                    <option>Length</option>
+
+                </select>
+
+                <div class="primary">
+                    <input type="number" id="main-unit">
+                    <select name="" class="main-unit-options reset">
+                        <option id="main-op1">Celcius</option>
+                        <option id="main-op2">Kelvin</option>
+                        <option id="main-op3">Fahrenheit</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="secondary">
+                    <input type="number" id="second-unit">
+                    <select name="" class="second-unit-options reset">
+                            <option id="sub-op1">Kelvin</option>
+                            <option id="sub-op2">Fahrenheit</option>
+                            <option id="sub-op3">Celcius</option>
+                    </select>
+                </div>
+           </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
